@@ -46,24 +46,27 @@ async function getMedia(petId, petName) {
 
 function displayTheMedia (petName, imageURL) {
 
-let randomNumber  = Math.floor().Math.random();
+ let petAge = Math.floor(Math.random() * 100) + 1;
 const petContainer = document.getElementById('pets');
 const petDiv = document.createElement('div');
 petDiv.classList.add('pet-div')
 
 const petText = document.createElement('h2');
 
-const petHealthText = document.createElement('p');
+const petAgeElement = document.createElement('p');
 
-petHealthText.textContent = randomNumber;
+petAgeElement.textContent = ` Pets Age: ${petAge}`
 petText.classList.add('pet-text');
 
 const image = document.createElement('img')
+image.classList.add('pet-image')
 image.src = imageURL;
+
+
 petText.textContent =`${petName}`
 petDiv.appendChild(petText)
 petDiv.appendChild(image)
-petDiv.appendChild(petHealthText)
+petDiv.appendChild(petAgeElement)
 
 
 petContainer.appendChild(petDiv);
