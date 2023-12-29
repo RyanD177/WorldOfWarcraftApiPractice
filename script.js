@@ -54,6 +54,7 @@ petDiv.classList.add('pet-div')
 const petText = document.createElement('h2');
 
 const petAgeElement = document.createElement('p');
+petAgeElement.classList.add('pet-age')
 
 petAgeElement.textContent = ` Pets Age: ${petAge}`
 petText.classList.add('pet-text');
