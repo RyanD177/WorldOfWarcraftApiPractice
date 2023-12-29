@@ -1,0 +1,23 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+#pets{
+    padding: 9rem 2%;
+    background-color: red;
+}
+.pet-div{
+    display:flex;
+    background-color: orange;
+    align-items: flex-start;
+    margin:2rem 0 2rem 0;
+}
+.pet-text{
+    margin-right:2rem;
+}
+header{
+    background-color: green;
+    width:100%;
+    height:100px;
+}
