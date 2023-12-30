@@ -1,55 +1,73 @@
-
-
 * {
   margin: 0;
   padding: 0;
-  font-size: 112%;
-  font-family: 'Press Start 2P', monospace;
+  font-size: 100%;
+  font-family: "Press Start 2P", monospace;
+  box-sizing: border-box; 
 }
-body {
-  background: #1a3155;
+body,
+html {
+  height: 100%;
+
 }
-#pets {
-  padding: 2.5rem;
-  display: flex;
-  flex-wrap: wrap;
+
+#pets{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+}
+#background-container {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; 
+  background-image: url(b40b8769-d1ee-4166-8d13-c7067b9e3618.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .pet-div {
-  display: flex;
-  flex-direction: column;
+ display:flex;
+ text-align: center;
+ flex-wrap: wrap;
+ background-color: white;
+ opacity: 70%;
+ padding:2rem;
+ margin:2rem;
+  width:12rem;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ border-radius:50px;
 
-  justify-content: space-evenly;
-  align-items: flex-start;
-  padding: 2rem;
-  margin: 1rem;
-  width: 50%;
-  align-items: center;
-  border:2px solid black;
-  box-shadow: 2px 4px 4px 4px #edf0f0
 }
 .pet-text {
-    color: rgb(205, 222, 244);
+  color: black;
   font-weight: 700;
-  margin-bottom:2rem;
-
-
 }
 .pet-age {
-    color: rgb(205, 222, 244);
+  color: black;
   font-weight: 700;
-  margin-top:2rem;
+}
+
+.pet-image {
+  border: solid #1a3155 8px;
+  border-radius: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
 
 }
-header {
-  background-color: green;
-  width: 100%;
-  height: 100px;
-}
-.pet-image {
- width:160px;
- height:250px;
-  border: solid  #1a3155 8px;
-    border-radius:50%;
-}
+
 /* oval shape: width:160px;
 height:250px; */
