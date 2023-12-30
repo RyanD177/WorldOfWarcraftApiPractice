@@ -68,7 +68,7 @@ function displayTheMedia(petName, imageURL) {
   const petAgeElement = document.createElement("p");
   petAgeElement.classList.add("pet-age");
 
-  petAgeElement.textContent = ` Pets Age: ${petAge}`;
+  petAgeElement.textContent = `Age:${petAge}`;
   petText.classList.add("pet-text");
 
   const image = document.createElement("img");
